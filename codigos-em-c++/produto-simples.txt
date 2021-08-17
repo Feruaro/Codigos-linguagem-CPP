@@ -1,0 +1,15 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int v1, v2, prod = 0;
+    cin >> v1 >> v2;
+
+    cout << "PROD = " << v1 * v2 << endl;
+ 
+    return 0;
+}

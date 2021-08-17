@@ -1,0 +1,23 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int nota;
+    char n = ' ';
+  
+    cin >> nota;
+
+    if(nota == 0) n = 'E';
+    else if(nota > 0 && nota <= 35) n = 'D';
+    else if(nota > 35 && nota <= 60) n = 'C';
+    else if(nota > 60 && nota <= 85) n = 'B';
+    else n = 'A';
+
+    cout << n << endl;
+ 
+    return 0;
+}

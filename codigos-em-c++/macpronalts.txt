@@ -1,0 +1,30 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd, prod, qntdProd;
+    double soma = 0;
+    cin >> qntd;
+
+    for(int i=0; i<qntd; i++){
+        do{
+            cin >> prod;
+        }while(prod < 1001 || prod > 1005);
+        cin >> qntdProd;
+    
+        if(prod == 1001) soma += (qntdProd * 1.50);
+        else if(prod == 1002) soma += (qntdProd * 2.50);
+        else if(prod == 1003) soma += (qntdProd * 3.50);
+        else if(prod == 1004) soma += (qntdProd * 4.50);
+        else if(prod == 1005) soma += (qntdProd * 5.50);
+    }
+
+    cout << fixed;
+    cout << setprecision(2) << soma << endl;
+ 
+    return 0;
+}

@@ -1,0 +1,19 @@
+
+
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+using namespace std;
+ 
+int main() {
+ 
+    double v, d, r, n = 3.14;
+
+    while(scanf("%lf %lf", &v, &d) != EOF){
+        r = d / 2;
+        cout << "ALTURA = " << fixed << setprecision(2) << v / (n * pow(r, 2)) << endl;
+        cout << "AREA = " << fixed << setprecision(2) << n * pow(r,2) << endl;
+    }
+ 
+    return 0;
+}

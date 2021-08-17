@@ -1,0 +1,19 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int horario, h = 0, m = 0, s = 0;
+    cin >> horario;
+
+    h = horario/3600, horario %= 3600;
+    m = horario / 60, horario %= 60;
+    s = horario / 1;
+
+    cout << h << ":" << m << ":" << s << endl;
+ 
+    return 0;
+}

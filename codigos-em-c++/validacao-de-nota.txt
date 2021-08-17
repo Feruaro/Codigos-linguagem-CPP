@@ -1,0 +1,23 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    double nota, media = 0;
+    int i = 0;
+
+    do{
+        cin >> nota;
+
+        if(nota >= 0 && nota <= 10) media += nota, i++;
+        else cout << "nota invalida" << endl;
+
+    }while(i < 2);
+
+    cout << "media = " << media / 2 << endl;
+ 
+    return 0;
+}

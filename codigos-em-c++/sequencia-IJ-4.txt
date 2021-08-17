@@ -1,0 +1,23 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    float i = 0, j;
+
+    while(i < 2.2){
+        j = 0;
+        j += 1 + i;
+        for(int x=0; x<3; x++){
+            cout << "I=" << i << " J=" << j << endl;
+            j++;
+        }
+        i += 0.2;
+    }
+
+
+    return 0;
+}

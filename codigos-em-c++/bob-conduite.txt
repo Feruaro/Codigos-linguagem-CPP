@@ -1,0 +1,18 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd, r1, r2;
+    cin >> qntd;
+
+    for(int i=0; i<qntd; i++){
+        cin >> r1 >> r2;
+        cout << r1 + r2 << endl;
+    }
+ 
+    return 0;
+}

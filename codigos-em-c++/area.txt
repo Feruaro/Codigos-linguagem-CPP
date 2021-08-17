@@ -1,0 +1,20 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    double a, b, c;
+    cin >> a >> b >> c;
+
+    cout << fixed;
+    cout << "TRIANGULO: " << setprecision(3) << (a * c) / 2 << endl;
+    cout << "CIRCULO: " << setprecision(3) << 3.14159 * (c * c) << endl;
+    cout << "TRAPEZIO: " << setprecision(3) << ((a + b) * c) / 2 << endl;
+    cout << "QUADRADO: " << setprecision(3) << b * b << endl;
+    cout << "RETANGULO: " << setprecision(3) << a * b << endl;
+ 
+    return 0;
+}

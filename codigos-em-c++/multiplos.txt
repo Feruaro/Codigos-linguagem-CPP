@@ -1,0 +1,19 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int a, b, menor = 0, maior = 0;
+    cin >> a >> b;
+    
+    if(a < b) menor = a, maior = b;
+    else menor = b, maior = a;
+
+    if(maior%menor == 0) cout << "Sao Multiplos" << endl;
+    else cout << "Nao sao Multiplos" << endl;
+ 
+    return 0;
+}

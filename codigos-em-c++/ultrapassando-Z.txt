@@ -1,0 +1,25 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int x, z, somaX = 0, qntd = 0;
+  
+    cin >> x;
+    do{
+        cin >> z;
+    }while(z <= x);
+
+    do{
+        somaX += x;
+        qntd++;
+        x++;
+    }while(somaX < z);
+
+    cout << qntd << endl;
+ 
+    return 0;
+}

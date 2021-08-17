@@ -1,0 +1,28 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int n1, n2, ma = 0, me = 0, soma;
+
+    do{
+        cin >> n1 >> n2;
+        if(n1 <= 0 || n2 <= 0) break;
+
+        if(n1 < n2) me = n1, ma = n2;
+        else me = n2, ma = n1;
+
+        soma = 0;
+        for(int i=me; i<=ma; i++){
+            soma += i;
+            cout << i << " ";
+        }
+        cout << "Sum=" << soma << endl;
+
+    }while(n1 > 0 || n2 > 0);
+ 
+    return 0;
+}

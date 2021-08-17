@@ -1,0 +1,21 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int A, B, C, D, E, qntd;
+    cin >> A >> B >> C >> D >> E;
+    
+    if(A%2 == 0) qntd++;
+    if(B%2 == 0) qntd++;
+    if(C%2 == 0) qntd++;
+    if(D%2 == 0) qntd++;
+    if(E%2 == 0) qntd++;
+        
+    cout << qntd << " valores pares" << endl;
+ 
+    return 0;
+}

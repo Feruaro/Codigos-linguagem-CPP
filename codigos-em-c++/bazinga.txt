@@ -1,0 +1,68 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+  int qntd;
+  string sheldon, raj, r = "";
+
+  cin >> qntd;
+
+  for(int i=1; i<=qntd; i++){
+    cin >> sheldon >> raj;
+
+    //1. a tesoura corta o papel;
+    if(sheldon == "tesoura" && raj == "papel") r = "Bazinga!";
+    else if(sheldon == "papel" && raj == "tesoura") r = "Raj trapaceou!";
+     
+    //2. o papel embrulha a pedra;
+    if(sheldon == "papel" && raj == "pedra") r = "Bazinga!";
+    else if(sheldon == "pedra" && raj == "papel") r = "Raj trapaceou!";
+    
+    //3. a pedra esmaga o lagarto;
+    if(sheldon == "pedra" && raj == "lagarto") r = "Bazinga!";
+    else if(sheldon == "lagarto" && raj == "pedra") r = "Raj trapaceou!";
+    
+    //4. o lagarto envenena Spock;
+    if(sheldon == "lagarto" && raj == "Spock") r = "Bazinga!";
+    else if(sheldon == "Spock" && raj == "lagarto") r = "Raj trapaceou!";
+    
+    //5. Spock destrói a tesoura;
+    if(sheldon == "Spock" && raj == "tesoura") r = "Bazinga!";
+    else if(sheldon == "tesoura" && raj == "Spock") r = "Raj trapaceou!";
+    
+    //6. a tesoura decapita o lagarto;
+    if(sheldon == "tesoura" && raj == "lagarto") r = "Bazinga!";
+    else if(sheldon == "lagarto" && raj == "tesoura") r = "Raj trapaceou!";
+    
+    //7. o lagarto come o papel;
+    if(sheldon == "lagarto" && raj == "papel") r = "Bazinga!";
+    else if(sheldon == "papel" && raj == "lagarto") r = "Raj trapaceou!";
+    
+    //8. o papel contesta Spock;
+    if(sheldon == "papel" && raj == "Spock") r = "Bazinga!";
+    else if(sheldon == "Spock" && raj == "papel") r = "Raj trapaceou!";
+    
+    //9. Spock vaporiza a pedra;
+    if(sheldon == "Spock" && raj == "pedra") r = "Bazinga!";
+    else if(sheldon == "pedra" && raj == "Spock") r = "Raj trapaceou!";
+    
+    //10. a pedra quebra a tesoura.
+    if(sheldon == "pedra" && raj == "tesoura") r = "Bazinga!";
+    else if(sheldon == "tesoura" && raj == "pedra") r = "Raj trapaceou!";
+
+    //empates
+    if(sheldon == "pedra" && raj == "pedra") r = "De novo!";
+    else if(sheldon == "papel" && raj == "papel") r = "De novo!";
+    else if(sheldon == "tesoura" && raj == "tesoura") r = "De novo!";
+    else if(sheldon == "lagarto" && raj == "lagarto") r = "De novo!";
+    else if(sheldon == "Spock" && raj == "Spock") r = "De novo!";
+
+    cout << "Caso #" << i << ": " << r << endl;
+  }
+ 
+    return 0;
+}

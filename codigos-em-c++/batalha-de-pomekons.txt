@@ -1,0 +1,27 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd, bonus, a1, a2, d1, d2, n1, n2, golpe1 = 0, golpe2 = 0;
+    cin >> qntd;
+
+    for(int i=0; i<qntd; i++){
+        cin >> bonus >> a1 >> d1 >> n1 >> a2 >> d2 >> n2;
+
+        if(n1%2 == 0) golpe1 = ((a1 + d1) / 2) + bonus;
+        } else golpe1 = ((a1 + d1) / 2);
+        
+        if(n2%2 == 0) golpe2 = ((a2 + d2) / 2) + bonus;
+        else golpe2 = ((a2 + d2) / 2);
+
+        if(golpe1 > golpe2) cout << "Dabriel" << endl;
+        else if(golpe1 < golpe2) cout << "Guarte" << endl;
+        else cout << "Empate" << endl;
+    }
+ 
+    return 0;
+}

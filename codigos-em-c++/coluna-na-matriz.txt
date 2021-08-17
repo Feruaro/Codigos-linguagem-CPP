@@ -1,0 +1,31 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    int n;
+    double x[12][12], soma = 0, media = 0;
+    char t;
+
+    cin >> n >> t;
+
+    //linha
+    for(int i=0; i<12; i++){
+        //coluna
+        for(int j=0; j<12; j++){
+            cin >> x[i][j];  
+        }
+    }
+    for(int i=0; i<12; i++){
+        if(t == 'S') soma += x[i][n];
+        else if(t == 'M') media += x[i][n];
+    }
+  
+    if(t == 'S') cout << fixed << setprecision(1) << soma << endl;
+    else if(t == 'M') cout << fixed << setprecision(1) << media / 12 << endl;
+ 
+    return 0;
+}

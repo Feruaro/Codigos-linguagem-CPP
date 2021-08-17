@@ -1,0 +1,26 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    float salario, r = 0, s = 0;
+    int p = 0;
+    
+    cin >> salario;
+
+    if(salario <= 400.0) s = salario * 1.15, r = s - salario, p = 15;
+    else if(salario <= 800.0) s = salario * 1.12, r = s - salario, p = 12;
+    else if(salario <= 1200.0) s = salario * 1.10, r = s - salario, p = 10;
+    else if(salario <= 2000.0) s = salario * 1.07, r = s - salario, p = 7;
+    else s = salario * 1.04, r = s - salario, p = 4;
+
+    cout << fixed;
+    cout << "Novo salario: " << setprecision(2) << s << endl;
+    cout << "Reajuste ganho: " << setprecision(2) << r << endl;
+    cout << "Em percentual: " << p << " %" << endl;
+ 
+    return 0;
+}

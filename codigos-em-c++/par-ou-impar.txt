@@ -1,0 +1,26 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd;
+    cin >> qntd;
+
+    int num[qntd];
+    for(int i=0; i<qntd; i++){
+        cin >> num[i];
+    }
+
+    for(int i=0; i<qntd; i++){
+        if(num[i]%2 == 0 && num[i] > 0) cout << "EVEN POSITIVE" << endl;
+        else if(-num[i]%2 == 0 && num[i] < 0) cout << "EVEN NEGATIVE" << endl;
+        else if(num[i]%2 == 1 && num[i] > 0) cout << "ODD POSITIVE" << endl;
+        else if(-num[i]%2 == 1 && num[i] < 0) cout << "ODD NEGATIVE" << endl;
+        else if(num[i] == 0) cout << "NULL" << endl;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,20 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int senha = 2002, tentativa;
+
+    do{
+        cin >> tentativa;
+
+        if(tentativa == senha) cout << "Acesso Permitido" << endl;
+        else cout << "Senha Invalida" << endl;
+
+    }while(senha != tentativa);
+ 
+    return 0;
+}

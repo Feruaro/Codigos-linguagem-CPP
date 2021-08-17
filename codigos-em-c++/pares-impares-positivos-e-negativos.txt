@@ -1,0 +1,29 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int num[5], qntdPar = 0, qntdImpar = 0, qntdPos = 0, qntdNeg = 0;
+
+    for(int i=0; i<5; i++){
+        cin >> num[i];
+    }
+
+    for(int i=0; i<5; i++){
+        if(num[i] > 0) qntdPos++;
+        else if(num[i] < 0) qntdNeg++;
+
+        if(num[i]%2 == 0) qntdPar++;
+        else qntdImpar++;
+    }
+
+    cout << qntdPar << " valor(es) par(es)" << endl;
+    cout << qntdImpar << " valor(es) impar(es)" << endl;
+    cout << qntdPos << " valor(es) positivo(s)" << endl;
+    cout << qntdNeg << " valor(es) negativo(s)" << endl;
+ 
+    return 0;
+}

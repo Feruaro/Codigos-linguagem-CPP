@@ -1,0 +1,34 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int golG, golI, c, total = 0;
+    int qntdVitG = 0, qntdVitI = 0, empate = 0;
+    string vencedor = "";
+
+    do{
+        cin >> golI >> golG;
+
+        if(golG > golI) qntdVitG++;
+        else if(golG == golI) qntdVitI++;
+        else qntdVitI++;
+      
+        cout << "Novo grenal (1-sim 2-nao)" << endl;
+        cin >> c;
+
+        total++;
+    }while(c == 1);
+
+    if(qntdVitG > qntdVitI) vencedor = "Gremio venceu mais";
+    else if(qntdVitG == qntdVitI) vencedor = "Nao houve vencedor";
+    else vencedor = "Inter venceu mais";
+
+    cout << total << " grenais" << "\nInter:" << qntdVitI << "\nGremio:" << qntdVitG << "\nEmpates:" << empate << endl;
+    cout << vencedor << endl;
+ 
+    return 0;
+}

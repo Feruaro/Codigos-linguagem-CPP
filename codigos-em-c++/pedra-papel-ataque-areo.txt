@@ -1,0 +1,34 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int n;
+    string j1, j2, g = "";
+
+    cin >> n;
+
+    for(int i=0; i<n; i++){
+        cin >> j1 >> j2;
+
+        if(j1 == "ataque" && j2 == "pedra") g = "Jogador 1 venceu";
+        else if(j1 == "pedra" && j2 == "ataque") g = "Jogador 2 venceu";
+  
+        if(j1 == "pedra" && j2 == "papel") g = "Jogador 1 venceu";
+        else if(j1 == "papel" && j2 == "pedra") g = "Jogador 2 venceu";
+        
+        if(j1 == "ataque" && j2 == "papel") g ="Jogador 1 venceu";
+        else if(j1 == "papel" && j2 == "ataque") g = "Jogador 2 venceu";
+        
+        if(j1 == "ataque" && j2 == "ataque") g = "Aniquilacao mutua";
+        else if(j1 == "pedra" && j2 == "pedra") g = "Sem ganhador";
+        else if(j1 == "papel" && j2 == "papel") g = "Ambos venceram";
+        
+        cout << g << endl;
+    }
+ 
+    return 0;
+}

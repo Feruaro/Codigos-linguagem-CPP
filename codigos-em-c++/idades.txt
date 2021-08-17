@@ -1,0 +1,20 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    int idade, qntd = 0;
+    double media = 0;
+
+    do{
+        cin >> idade;
+        if(idade > 0) media += idade, qntd++;
+    }while(idade > 0);
+
+    cout << fixed << setprecision(2) << media / qntd << endl;
+ 
+    return 0;
+}

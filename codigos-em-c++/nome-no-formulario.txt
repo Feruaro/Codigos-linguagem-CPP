@@ -1,0 +1,18 @@
+
+
+#include <iostream>
+#include <cstring> 
+using namespace std;
+ 
+int main() {
+ 
+    char nomeForm[200];
+    cin.getline(nomeForm, 200);
+
+    int tam = strlen(nomeForm);
+
+    if(tam <=80) cout << "YES" << endl;
+    else cout << "NO" << endl;
+ 
+    return 0;
+}

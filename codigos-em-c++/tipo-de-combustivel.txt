@@ -1,0 +1,27 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int n, qntdA = 0, qntdG = 0, qntdD = 0;
+
+    do{
+        do{
+            cin >> n;
+        }while(n < 1 || n > 4);
+
+        if(n == 1) qntdA++;
+        else if(n == 2) qntdG++;
+        else if(n == 3) qntdD++;
+    }while(n != 4);
+  
+    cout << "MUITO OBRIGADO" << endl;
+    cout << "Alcool: " << qntdA << endl;
+    cout << "Gasolina: " << qntdG << endl;
+    cout << "Diesel: " << qntdD << endl;
+ 
+    return 0;
+}

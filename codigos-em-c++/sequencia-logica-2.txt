@@ -1,0 +1,18 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int x, y, a = 0;
+    cin >> x >> y;
+
+    for(int i=1; i<=y; i++){
+        if(a < x-1) cout << i << " ", a++;
+        else cout << i << endl, a = 0;
+    }
+ 
+    return 0;
+}

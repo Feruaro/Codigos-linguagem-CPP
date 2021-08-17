@@ -1,0 +1,17 @@
+
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+ 
+int main() {
+ 
+    int d;
+    float km;
+    cin >> d >> km;
+
+    cout << fixed << setprecision(3) << d / km << " km/l" << endl;
+ 
+    return 0;
+}

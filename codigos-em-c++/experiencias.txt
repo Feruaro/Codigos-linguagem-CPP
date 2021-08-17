@@ -1,0 +1,32 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd, qntdAnimal, qntdC = 0, qntdR = 0, qntdS = 0, qntdTotal = 0;
+    char animal;
+
+    cin >> qntd;
+
+    for(int i=0; i<qntd; i++){
+        cin >> qntdAnimal >> animal; 
+ 
+        if(animal == 'C') qntdC += qntdAnimal, qntdTotal += qntdAnimal;
+        else if(animal == 'R') qntdR += qntdAnimal, qntdTotal += qntdAnimal;
+        else if(animal == 'S') qntdS += qntdAnimal, qntdTotal += qntdAnimal; 
+    }
+
+    cout << fixed;
+    cout << "Total: " << qntdTotal << " cobaias" << endl;
+    cout << "Total de coelhos: " << qntdC << endl;
+    cout << "Total de ratos: " << qntdR << endl;
+    cout << "Total de sapos: " << qntdS << endl;
+    cout << "Percentual de coelhos: " << setprecision(2) << (qntdC * 100.00) / qntdTotal << " %" << endl;
+    cout << "Percentual de ratos: " << setprecision(2) << (qntdR * 100.00) / qntdTotal << " %" << endl;
+    cout << "Percentual de sapos: " << setprecision(2) << (qntdS * 100.00) / qntdTotal << " %" << endl;
+ 
+    return 0;
+}

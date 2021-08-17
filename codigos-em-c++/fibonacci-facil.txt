@@ -1,0 +1,23 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd, f = 0, n1 = 0, n2 = 1;
+    cin >> qntd;
+
+    cout << n1 << " " << n2;
+    for(int i=2; i<qntd; i++){
+        f = n1 + n2;
+        n1 = n2;
+        n2 = f;
+        cout << " " << f;
+    }
+
+    cout << endl;
+ 
+    return 0;
+}

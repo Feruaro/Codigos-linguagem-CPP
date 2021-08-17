@@ -1,0 +1,20 @@
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+ 
+    int qntd1, qntd2, cod1, cod2;
+    float p1, p2, total = 0;
+
+    cin >> cod1 >> qntd1 >> p1;
+    cin >> cod2 >> qntd2 >> p2;
+   
+    total = (qntd1 * p1) + (qntd2 * p2);
+
+    cout << "VALOR A PAGAR: R$ " << fixed << setprecision(2) << total << endl; 
+ 
+    return 0;
+}

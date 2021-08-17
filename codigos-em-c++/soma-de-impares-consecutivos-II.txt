@@ -1,0 +1,29 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd, x, y, qntdImpar;
+    cin >> qntd;
+
+    for(int i=0; i<qntd; i++){
+        cin >> x >> y;
+        qntdImpar = 0;
+
+        if(x < y){
+            for(int i=x+1; i<y; i++){
+                if(i%2 == 1) qntdImpar += i;
+            }
+        } else{
+            for(int i=y+1; i<x; i++){
+                if(i%2 == 1) qntdImpar += i;
+            }
+        }
+        cout << qntdImpar << endl;
+    }
+ 
+    return 0;
+}

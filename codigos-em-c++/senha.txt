@@ -1,0 +1,17 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int senha;
+
+    do{
+        cin >> senha;
+        cout << senha - 1 << endl;
+    }while(senha < 9999);
+ 
+    return 0;
+}

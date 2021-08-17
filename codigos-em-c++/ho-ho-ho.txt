@@ -1,0 +1,18 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int qntd;
+    cin >> qntd;
+
+    for(int i=1; i<qntd; i++){
+        cout << "Ho ";
+    }
+    cout << "Ho!" << endl;
+ 
+    return 0;
+}
