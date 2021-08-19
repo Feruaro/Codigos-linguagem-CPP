@@ -1,0 +1,26 @@
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    
+    int olho_esq = 0, olho_meio = 0, olho_dir = 0;
+    string corvo;
+
+    while(getline(cin, corvo)){
+        if(corvo[0] == '*'){
+            olho_esq += 4;
+        }
+        if(corvo[1] ==  '*'){
+            olho_meio += 2;
+        }
+        if(corvo[2] == '*'){
+            olho_dir++;
+        }
+        if(corvo[0] == 'c'){
+            cout << olho_esq + olho_meio + olho_dir << endl;
+            olho_esq = 0, olho_meio = 0, olho_dir = 0;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    string num; 
+    cin >> num;
+    long long int tam = num.size();
+  
+    for(long long int i=1; i<=tam; i++){
+        cout << num[tam - i];
+    }
+    cout << endl;
+ 
+    return 0;
+}
