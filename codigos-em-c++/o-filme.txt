@@ -1,0 +1,17 @@
+
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    double valor, novo_valor;
+    cin >> valor >> novo_valor;
+
+    double x = ((novo_valor - valor) * 100) / valor;
+
+    cout << fixed << setprecision(2) << x << "%" << endl;
+ 
+    return 0;
+}

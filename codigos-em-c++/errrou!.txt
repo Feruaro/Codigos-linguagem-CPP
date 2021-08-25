@@ -1,0 +1,45 @@
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+    int c, r, n1, n2, n3, dif;
+    string op[5];
+    cin >> c;
+
+    for(int x=0; x<c; x++){
+        	
+        for(int i=0; i<5; i++){
+            cin >> op[i];
+        }
+
+	//op[0] -> num1 | op[1] -> op | op[2] -> num2 | op[4] -> result 
+	//stoi -> string to integer
+        if(op[1] == "+"){
+ 	    n1 = stoi(op[0]); 
+            n2 = stoi(op[2]); 
+	    r = n1 + n2;
+	} else if(op[1] == "*" || op[1] == "x"){ 
+	    n1 = stoi(op[0]); 
+	    n2 = stoi(op[2]); 
+	    r = n1 * n2;
+        } else if(op[1] == "-"){ 
+	    n1 = stoi(op[0]); 
+	    n2 = stoi(op[2]); 
+	    r = n1 - n2;
+	}        
+	n3 = stoi(op[4]);
+    
+        dif = n3 - r;
+        if(dif < 0) dif *= -1;
+     
+        cout << "E";
+        for(int i=0; i<dif; i++){
+            cout << "r";
+        }
+        cout << "ou!" << endl;
+    }
+    return 0;
+}

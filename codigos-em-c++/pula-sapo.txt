@@ -1,0 +1,27 @@
+
+
+#include <iostream>
+ using namespace std;
+ 
+int main() {
+ 
+    int p, n, dif = 0, aux = 0;
+    cin >> p >> n;
+    int canos[n];
+
+    for(int i=0; i<n; i++){
+        cin >> canos[i];
+    }
+
+    for(int i=1; i<n; i++){
+        if(canos[i] > canos[i-1]) dif = canos[i] - canos[i-1];
+        else dif = canos[i-1] - canos[i];
+
+        if(dif > p) aux = 1, break;
+    }
+  
+    if(aux == 1) cout << "GAME OVER" << endl;
+    else cout << "YOU WIN" << endl;
+ 
+    return 0;
+}
