@@ -1,0 +1,27 @@
+
+
+#include <iostream> 
+using namespace std;
+ 
+int main() {
+ 
+    int n;
+    cin >> n;
+    string m[n];
+    float nota[n];
+
+    for(int i=0; i<n; i++){
+        cin >> m[i] >> nota[i];
+    }
+
+    float ma = nota[0];
+    int ind = 0;
+    for(int i=1; i<n; i++){
+        if(ma < nota[i]) ma = nota[i], ind = i;
+    }
+
+    if(ma >= 8) cout << m[ind] << endl;
+    else cout << "Minimum note not reached" << endl;
+ 
+    return 0;
+}

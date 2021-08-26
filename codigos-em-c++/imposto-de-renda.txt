@@ -1,0 +1,20 @@
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+ 
+    double valor, dif = 0;
+    cin >> valor;
+
+    if(valor > 4500.00) dif += (valor - 4500.00) * 0.28, valor = 4500.00;
+    if(valor > 3000.00 && valor <= 4500.00) dif += (valor - 3000.00) * 0.18, valor = 3000.00;
+    if(valor > 2000.00 && valor <= 3000.00) dif += (valor - 2000.00) * 0.08;
+  
+    if(valor >= 0 && valor <= 2000.00) cout << "Isento" << endl;
+    else cout << "R$ " << fixed << setprecision(2) << dif << endl;
+ 
+    return 0;
+}

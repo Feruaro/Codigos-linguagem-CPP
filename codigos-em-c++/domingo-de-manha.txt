@@ -1,0 +1,20 @@
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+    int h, m, a;
+  
+    while(scanf("%d:%d", &h, &m) != EOF){
+        h++, a = 0;
+        if(h == 6 || (h == 7 && m == 0)) a = 0;
+        else if(h == 8 && (m > 0 && m <= 59)) a = m;
+        else if(h == 9 && (m >= 0 && m <= 59)) a = 60 + m;
+        else if(h == 10) a = 60 * 2;
+        cout << "Atraso maximo: " << a << endl;
+    }
+ 
+    return 0;
+}

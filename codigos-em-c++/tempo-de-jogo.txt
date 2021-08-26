@@ -1,0 +1,21 @@
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+    int hrInicio, hrFinal, aux = 24;
+    cin >> hrInicio >> hrFinal;
+
+    if(hrInicio >= hrFinal){
+        for(int i=0; i<hrFinal; i++){
+            aux++;
+        }
+        hrFinal = aux;
+    }
+
+    cout << "O JOGO DUROU " << hrFinal - hrInicio << " HORA(S)" << endl;
+ 
+    return 0;
+}
